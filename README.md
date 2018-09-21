@@ -1,5 +1,9 @@
 # lightfm-recommender-app
 
+## Example
+
+Here is a link to a live running example of the application: https://lfm-rec.herokuapp.com/
+
 ## Information About Dataset Used
 The dataset describes 5-star rating and free-text tagging activity from [MovieLens](http://movielens.org), a movie recommendation service. It contains 100004 ratings and 1296 tag applications across 9125 movies. These data were created by 671 users between January 09, 1995 and October 16, 2016. This dataset was generated on October 17, 2016.
 
