@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
 body {
     margin: 0;
     padding: 0;
     text-align: center; /* !!! */
 }
 
-.container {  
-    max-width: 250px;
+h1, h2, h3, p {
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
     margin: auto;
 }
 
@@ -19,7 +24,7 @@ input.input {
 }
 
 input.button {
-    margin-top: 1.5em;
+    margin-top: 1.7em;
     text-align: center;
     border: 0;
     padding: 1em;
@@ -35,3 +40,14 @@ input.button:hover {
     background: #3498D8;
 }
 
+div#title {
+    width: 100%;
+    height: 50px;
+}
+
+div.descr {
+    width: 350px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}

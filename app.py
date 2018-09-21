@@ -23,6 +23,9 @@ def sample_recommendation(model=model, data=data):
     input_user_ids = np.fromstring(result, dtype=int, sep=' ') # User input data
     
     n_users, n_items = data['train'].shape
+    
+    x_list = []   
+    i_list = []
 
     for user_id in input_user_ids:
         known_positives = data['item_labels'][data['train'].tocsr()[user_id].indices]
@@ -33,14 +36,18 @@ def sample_recommendation(model=model, data=data):
         print(f'User {user_id}')
 
         print('     Known positives:')
-        for i in known_positives[:3]:
+        for i in known_positives[:1]:
+            i_list.append(i)
+            i_ = ''.join(i_list)
             print(f'        {i}')
 
         print("     Recommended:")
-        for x in top_items[:3]:
+        for x in top_items[:1]:
+            x_list.append(x)
+            x_ = ''.join(x_list)
             print(f'        {x}')
 
-        return (f'<h1 style="text-align:center"> Known positives: {i} <br>  Recommended: {x} </h1>')
+        return render_template('predict-page.html', rec=x_, known=i_)
 
 if __name__ == 'main':
     # app.debug = True
