@@ -1,5 +1,26 @@
 # lightfm-recommender-app
 
+## Usage 
+#### 1. Clone directory
+```bash
+$ git clone https://github.com/ahylton19/lightfm-recommender-app
+```
+
+#### 2. Change directory
+```bash
+$ cd lightfm-recommender-app-master
+```
+
+#### 3. Install the dependencies
+```bash
+$ pip install -r requirements.txt
+```
+
+#### 4. Run application
+```bash
+$ FLASK_RUN=app.py flask run
+```
+
 ## Example
 
 Here is a link to a live running example of the application: https://lfm-rec.herokuapp.com/
