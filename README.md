@@ -8,7 +8,7 @@ $ git clone https://github.com/ahylton19/lightfm-recommender-app
 
 #### 2. Change directory
 ```bash
-$ cd lightfm-recommender-app-master
+$ cd lightfm-recommender-app
 ```
 
 #### 3. Install the dependencies
